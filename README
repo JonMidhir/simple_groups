@@ -1,0 +1,38 @@
+Simple Groups
+========
+
+Introduction goes here.
+
+These methods are available on the user model after installation, many are self.explanatory!
+
+user.groups
+user.pending_groups
+user.is_member_of?(group)
+user.is_mod_of?(group)
+user.request_membership_of(group)
+user.pending_and_accepted_groups
+user.membership(group)
+user.leave(group)
+
+The following can be called on the group model.
+
+group.members
+group.mods
+group.pending_members
+group.accept_member(user)
+group.pending_and_accepted_members
+group.kick(user)
+group.mods_online
+group.members_online
+group.members_offline
+group.has_member?(user)
+
+
+
+Example
+=======
+
+Example goes here.
+
+
+Copyright (c) 2008 Jon M Hope, released under the MIT license
