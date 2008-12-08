@@ -40,6 +40,11 @@ module SimpleGroups
       def leave(group)
         self.membership(group).destroy if self.is_member_of?(group)
       end
+      
+      def become_member_of(group)
+          group.members << self unless self.pending_and_accepted_groups.include?(group)
+          group.accept_member(self)
+      end
     end
   end
 end

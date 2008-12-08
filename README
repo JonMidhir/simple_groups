@@ -16,10 +16,11 @@ If you wish you can rename the last parameter anything you want, but Group is pr
 Remember to run the migrations:
 rake db:migrate
 
-Example
+
+Usage
 =======
 
-These methods are available on the user model after installation, many are self.explanatory!
+These methods are available to your controllers and views after installation, many are self.explanatory!
 
 user.groups
 user.pending_groups
@@ -29,6 +30,7 @@ user.request_membership_of(group)
 user.pending_and_accepted_groups
 user.membership(group)
 user.leave(group)
+user.become_member_of(group)
 
 The following can be called on the group model.
 
@@ -42,6 +44,8 @@ group.mods_online
 group.members_online
 group.members_offline
 group.has_member?(user)
+
+Note that currently the user requests membership of the group and the group accepts membership of the user. It is up to you to protect this functionality and restrict it to mods only. If you want your groups to be open use the user.become_member_of(group) method.
 
 
 Copyright (c) 2008 Jon M Hope, released under the MIT license
