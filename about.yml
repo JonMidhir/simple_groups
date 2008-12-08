@@ -1,8 +1,8 @@
-author: Josh Martin
-summary: Adds a flexible mechanism for tracking users favorites.
-description: Adds a flexible mechanism for tracking user favorites.
+author: John Hope
+summary: Adds a simple system for grouping users.
+description: Adds a simple system for grouping users, using a has_many :through relationship.
 homepage: http://localhost/
-plugin: http://svn.webwideconsulting.com/svn/acts_as_favorite/
+plugin: http://github.com/JonMidhir/simple_groups/tree/master
 license: MIT
 version: 1.0
-rails_version: 1.0+
+rails_version: 2.0+
