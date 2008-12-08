@@ -1,7 +1,23 @@
 Simple Groups
 ========
 
-Introduction goes here.
+This plugin creates a group model and relates it to your User model via a has_many :through relationship. It is designed for use with restful_authentication but could be used with any User model.
+
+To install:
+
+script/plugin install git://github.com/JonMidhir/simple_groups.git
+
+To use:
+
+script/generate simple_groups Group
+
+If you wish you can rename the last parameter anything you want, but Group is probably the most appropriate! Add --skip-migration to avoid creating the migration files.
+
+Remember to run the migrations:
+rake db:migrate
+
+Example
+=======
 
 These methods are available on the user model after installation, many are self.explanatory!
 
@@ -26,13 +42,6 @@ group.mods_online
 group.members_online
 group.members_offline
 group.has_member?(user)
-
-
-
-Example
-=======
-
-Example goes here.
 
 
 Copyright (c) 2008 Jon M Hope, released under the MIT license
