@@ -1,4 +1,4 @@
-author: John Hope
+author: Jon Hope
 summary: Adds a simple system for grouping users.
 description: Adds a simple system for grouping users, using a has_many :through relationship.
 homepage: http://localhost/

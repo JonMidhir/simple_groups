@@ -13,6 +13,9 @@ script/generate simple_groups Group
 
 If you wish you can rename the last parameter anything you want, but Group is probably the most appropriate! Add --skip-migration to avoid creating the migration files.
 
+Add this near the top of your User model:
+include_simple_groups
+
 Remember to run the migrations:
 rake db:migrate
 
